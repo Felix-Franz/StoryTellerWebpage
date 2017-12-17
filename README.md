@@ -10,11 +10,12 @@ Just open the [Demo](https://felix-franz.github.io/StoryTellerWebpage/) an try t
 Just go in the `story.json` and place your story 😉.
 You only need to change the story items. the video that should be displayed at the beginn need to be named start.
 
-The Video Property need to be a link to a video that should be displayed while this story item is active.
+The video and decision Property need to be a link to a video that should be displayed while this story item is active. After the video is played the decision video will be played in a loop.
 action1, action2, ... need to contain the next story item depending on the key press.
 ```json
 "name of the story": {
         "video": "video url",
+        "decision": "video url of desicion video",
         "action1": "name of story item",
         "action2": "name of story item"
     }
