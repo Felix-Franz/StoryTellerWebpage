@@ -6,7 +6,7 @@ function setVideo(){
     var sVideo = oStory[sCurrent].video;
     oPlayer.src = sVideo;
     oPlayer.play();
-    console.log("Playing " + sCurrent + " (" + sVideo + ") [video]!");
+    console.log("Playing " + sCurrent + " (" + sVideo + ")!");
 }
 
 function init(){

@@ -1,4 +1,4 @@
-var sStart = "start";     //Start element name
+var sStart = "startvideo";     //Start element name
 
 var actions = {             //action bindings
     "a" : "action1",        //key: action name in story.json
@@ -6,21 +6,28 @@ var actions = {             //action bindings
 }
 
 var oStory = {
-    "start": {
-        "video": "http://www.sample-videos.com/video/mp4/720/big_buck_bunny_720p_10mb.mp4",
-        "autoaction": "test1"
+    "startvideo": {
+        "video": "video/Startvideo.mp4",
+        "autoaction": "startvideo",
+        "action1": "intro",
+        "action2": "intro"
     },
-    "test1": {
-        "video": "http://mirrors.standaloneinstaller.com/video-sample/star_trails.mp4",
-        "action1": "test2",
-        "action2": "start",
-        "autoaction": "start"
+    "intro": {
+        "video": "video/Intro.mp4",
+        "autoaction": "Entscheidungsvideo"
     },
-    "test2": {
-        "video": "http://mirrors.standaloneinstaller.com/video-sample/lion-sample.mp4",
-        "decision": "http://techslides.com/demos/sample-videos/small.mp4",
-        "action1": "start",
-        "action2": "start",
-        "autoaction": "start"
+    "Entscheidungsvideo": {
+        "video": "video/Entscheidungsvideo.mp4",
+        "action1": "FolgeSchwarz",
+        "action2": "FolgeWeiß",
+        "autoaction": "startvideo"
+    },
+    "FolgeSchwarz": {
+        "video": "video/FolgeSchwarz.mp4",
+        "autoaction": "startvideo"
+    },
+    "FolgeWeiß": {
+        "video": "video/FolgeWeiß.mp4",
+        "autoaction": "startvideo"
     }
 }
