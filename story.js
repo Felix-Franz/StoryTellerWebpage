@@ -1,8 +1,14 @@
 var sStart = "startvideo";     //Start element name
 
-var actions = {             //action bindings
-    "a" : "action1",        //key: action name in story.json
-    "b" : "action2"
+var actions = {
+    key: {                      //action bindings
+        "a" : "action1",        //key: action name in story.json
+        "b" : "action2"
+    },
+    mouse: {
+        "1" : "action1",        //left button
+        "2" : "action2"         //right button
+    }
 }
 
 var oStory = {

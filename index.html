@@ -5,12 +5,11 @@
     <title>StoryTellerWebpage</title>
 </head>
 
-<body onkeypress="onKeyPress(event);" style="margin: 0px; background-color: black;">
+<body onmousedown="onMouseDown(event)" onkeypress="onKeyPress(event);" style="margin: 0px; background-color: black;">
     
     <center>
         <button onclick="fullscreen();">Fullscreen</button>
         <br />
-        <!--<video id="player" onended="setDecision();" width="50%" height="50%" controls>--> <!-- just for debugging-->
         <video id="player" onended="onEnded();" width="50%" height="50%">
             Videos not supported
         </video>
