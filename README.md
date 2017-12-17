@@ -1,6 +1,10 @@
 # StoryTellerWebpage
 A Web page that plays videos depending on the user's decision.
 
+# Demo
+
+Just open the [Demo](https://felix-franz.github.io/StoryTellerWebpage/) an try to press 'a' or 'b'.
+
 ## How to configure
 
 Just go in the `story.json` and place your story 😉.
