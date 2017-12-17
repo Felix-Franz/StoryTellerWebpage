@@ -7,12 +7,12 @@ var actions = {             //action bindings
 //Settings End
 
 var oStory;
-var payer;
+var oPlayer;
 
 function setVideo(){
     var sVideo = oStory[sCurrent].video;
-    player.src = sVideo;
-    player.play();
+    oPlayer.src = sVideo;
+    oPlayer.play();
     console.log("Playing " + sCurrent + " (" + sVideo + ")!");
 }
 
@@ -29,19 +29,22 @@ function init(){
         },
         async: false
     });
-    payer = document.getElementById("player");
+    oPlayer = document.getElementById("player");
     setVideo();
 }
 
 
 function fullscreen() {
-    if (payer.requestFullscreen) {
-      payer.requestFullscreen();
-    } else if (payer.mozRequestFullScreen) {
-      payer.mozRequestFullScreen();
-    } else if (payer.webkitRequestFullscreen) {
-      payer.webkitRequestFullscreen();
+    if (oPlayer.requestFullscreen) {
+      oPlayer.requestFullscreen();
+    } else if (oPlayer.mozRequestFullScreen) {
+      oPlayer.mozRequestFullScreen();
+    } else if (oPlayer.webkitRequestFullscreen) {
+      oPlayer.webkitRequestFullscreen();
     }
+}
+function onPlayerEnded(){
+    
 }
 
 function onKeyPress(oEvent) {
