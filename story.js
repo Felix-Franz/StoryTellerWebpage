@@ -1,4 +1,4 @@
-var sCurrent = "start";     //Start element name
+var sStart = "start";     //Start element name
 
 var actions = {             //action bindings
     "a" : "action1",        //key: action name in story.json

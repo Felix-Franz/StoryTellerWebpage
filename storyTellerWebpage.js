@@ -1,5 +1,6 @@
 var oPlayer;
 var bDecision = false;
+var sCurrent = sStart;
 
 function setVideo(){
     var sVideo = oStory[sCurrent].video;
@@ -30,6 +31,15 @@ function fullscreen() {
       oPlayer.mozRequestFullScreen();
     } else if (oPlayer.webkitRequestFullscreen) {
       oPlayer.webkitRequestFullscreen();
+    }
+}
+
+function onEnded(){
+    if (bDecision){
+        sCurrent = sStart;
+        setVideo();
+    } else {
+        setDecision();
     }
 }
 
