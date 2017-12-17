@@ -7,7 +7,7 @@ Just open the [Demo](https://felix-franz.github.io/StoryTellerWebpage/) an try t
 
 ## How to configure
 
-Just go in the `story.json` and place your story 😉.
+Just go in the `story.json` and place your story inside the oStory variable😉.
 You only need to change the story items. the video that should be displayed at the beginn need to be named start.
 
 The video and decision Property need to be a link to a video that should be displayed while this story item is active. After the video is played the decision video will be played in a loop.
@@ -21,7 +21,7 @@ action1, action2, ... need to contain the next story item depending on the key p
     }
 ```
 
-You can also change name of the start story item and the actions inside the `storyTellerWebpage.js`.
+You can also change name of the start story item and the actions inside the `story.js`.
 
 To change the start name just change change the `sCurrent` variable to whatever you want.
 

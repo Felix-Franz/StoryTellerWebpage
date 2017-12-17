@@ -1,11 +1,3 @@
-// Settings
-var sCurrent = "start";     //Start element name
-var actions = {             //action bindings
-    "a" : "action1",        //key: action name in story.json
-    "b" : "action2"
-}
-//Settings End
-
 var oPlayer;
 var bDecision = false;
 
