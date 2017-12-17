@@ -1,8 +1,8 @@
 // Settings
 var sCurrent = "start";     //Start element name
-var buttons = {             //button bindings
-    "a" : "button1",        //key: button name in story.json
-    "b" : "button2"
+var actions = {             //action bindings
+    "a" : "action1",        //key: action name in story.json
+    "b" : "action2"
 }
 //Settings End
 
@@ -13,7 +13,7 @@ function setVideo(){
     var sVideo = oStory[sCurrent].video;
     player.src = sVideo;
     player.play();
-    console.log("Playing " + sVideo + "!");
+    console.log("Playing " + sCurrent + " (" + sVideo + ")!");
 }
 
 function init(){
@@ -46,7 +46,7 @@ function fullscreen() {
 
 function onKeyPress(oEvent) {
     var sKey = oEvent.key;
-    var sNewStoryItem = oStory[sCurrent][buttons[sKey]]
+    var sNewStoryItem = oStory[sCurrent][actions[sKey]]
     if (!sNewStoryItem){
         console.error("key not defined!");
         return;

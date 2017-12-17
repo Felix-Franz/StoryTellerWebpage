@@ -1,17 +1,17 @@
 {
     "start": {
         "video": "http://www.sample-videos.com/video/mp4/720/big_buck_bunny_720p_10mb.mp4",
-        "button1": "test1",
-        "button2": "test2"
+        "action1": "test1",
+        "action2": "test2"
     },
     "test1": {
         "video": "http://mirrors.standaloneinstaller.com/video-sample/star_trails.mp4",
-        "button1": "start",
-        "button2": "start"
+        "action1": "start",
+        "action2": "start"
     },
     "test2": {
         "video": "http://mirrors.standaloneinstaller.com/video-sample/lion-sample.mp4",
-        "button1": "start",
-        "button2": "start"
+        "action1": "start",
+        "action2": "start"
     }
 }
