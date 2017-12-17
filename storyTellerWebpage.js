@@ -6,11 +6,18 @@ var buttons = {             //button bindings
 }
 //Settings End
 
-var sStory;
 var oStory;
 var payer;
 
+function setVideo(){
+    var sVideo = oStory[sCurrent].video;
+    player.src = sVideo;
+    player.play();
+    console.log("Playing " + sVideo + "!");
+}
+
 function init(){
+    var sStory;
     $.ajax({
         type: "GET",
         url: "story.json",
@@ -36,13 +43,6 @@ function fullscreen() {
     } else if (payer.webkitRequestFullscreen) {
       payer.webkitRequestFullscreen();
     }
-}
-
-function setVideo(){
-    var sVideo = oStory[sCurrent].video;
-    player.src = sVideo;
-    player.play();
-    console.log("Playing " + sVideo + "!");
 }
 
 function onKeyPress(oEvent) {
