@@ -10,6 +10,8 @@ Just open the [Demo](https://felix-franz.github.io/StoryTellerWebpage/) an try t
 Just go in the `story.json` and place your story inside the oStory variable😉.
 You only need to change the story items. the video that should be displayed at the beginn need to be named start (if there are no further changes).
 
+Change the variable sCursor to display the cursor.
+
 The video Property need to be a link to a video that should be displayed while this story item is active. After the video was played the storyitem of ther property `autoaction` will be played.
 action1, action2, ... need be provided, but if a key or button is pressed and the current story item has a action for this action it will be played (similar to autoaction).
 ```json
