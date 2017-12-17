@@ -17,19 +17,18 @@ function setVideo(){
 }
 
 function init(){
-    var sStory;
     $.ajax({
         type: "GET",
         url: "story.json",
+        dataType: "json",
         success: function (data) {
-            sStory = data;
+            oStory = data;
         },
         error: function (XMLHttpRequest, textStatus, errorThrown) {
             console.error("Could not load story list");
         },
         async: false
     });
-    oStory = JSON.parse(sStory);
     payer = document.getElementById("player");
     setVideo();
 }
