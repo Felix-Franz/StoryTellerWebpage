@@ -1,0 +1,17 @@
+{
+    "start": {
+        "video": "test.mp4",
+        "button1": "test1",
+        "button2": "test2"
+    },
+    "test1": {
+        "video": "test.mp4",
+        "button1": "start",
+        "button2": "start"
+    },
+    "test2": {
+        "video": "test.mp4",
+        "button1": "start",
+        "button2": "start"
+    }
+}
