@@ -6,7 +6,6 @@ var actions = {             //action bindings
 }
 //Settings End
 
-var oStory;
 var oPlayer;
 var bDecision = false;
 
@@ -27,18 +26,6 @@ function setDecision(){
 }
 
 function init(){
-    $.ajax({
-        type: "GET",
-        url: "story.json",
-        dataType: "json",
-        success: function (data) {
-            oStory = data;
-        },
-        error: function (XMLHttpRequest, textStatus, errorThrown) {
-            console.error("Could not load story list");
-        },
-        async: false
-    });
     oPlayer = document.getElementById("player");
     setVideo();
 }
