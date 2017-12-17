@@ -1,4 +1,5 @@
-var sStart = "startvideo";     //Start element name
+var sStart = "startvideo";      //Start element name
+var bCursor = false;            //display a cursor
 
 var actions = {
     key: {                      //action bindings
@@ -6,7 +7,7 @@ var actions = {
         "b" : "action2"
     },
     mouse: {
-        "1" : "action1",        //left button
+        "" : "action1",        //left button
         "2" : "action2"         //right button
     }
 }

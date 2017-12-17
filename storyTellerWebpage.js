@@ -15,6 +15,8 @@ function init(){
     document.oncontextmenu = function() {
         return false;
     }
+    
+    if (!bCursor) document.body.style.cursor = 'none';
 }
 
 
