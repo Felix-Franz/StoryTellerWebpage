@@ -42,15 +42,9 @@ Therefore you need to add a new action (e.g. action3) to each story item and add
 
 # How to run
 
-## Using Webserver
-
-Just add all files to your root folder of webserver and visit the page.
-
-## Without Webserver
-
-You may need to configure your browser to allow Cross-Origin-Requests.
-
-* Start Chrome with following parameter `--allow-file-access-from-files`
-* Firefox need no extra configuration
-
-After that you can open the `index.html`.
+1. clone it `https://github.com/Felix-Franz/StoryTellerWebpage.git`
+1. webserver
+    1. copy it to the root of the webserver
+    1. navigate to the page
+1. Locally
+    1. just open the `index.html`
