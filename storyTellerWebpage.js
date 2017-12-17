@@ -6,16 +6,7 @@ function setVideo(){
     var sVideo = oStory[sCurrent].video;
     oPlayer.src = sVideo;
     oPlayer.play();
-    bDecision = false;
     console.log("Playing " + sCurrent + " (" + sVideo + ") [video]!");
-}
-
-function setDecision(){
-    var sDecision = oStory[sCurrent].decision;
-    oPlayer.src = sDecision;
-    oPlayer.play();
-    bDecision = true;
-    console.log("Playing " + sCurrent + " (" + sDecision + ") [decision]!");
 }
 
 function init(){
@@ -35,22 +26,16 @@ function fullscreen() {
 }
 
 function onEnded(){
-    if (bDecision){
-        sCurrent = sStart;
-        setVideo();
-    } else {
-        setDecision();
-    }
+    var sAction = oStory[sCurrent].autoaction;
+    if (!sAction) console.error("no autoaction defined!")
+    else sCurrent = sAction;
+    setVideo();
 }
 
 function onKeyPress(oEvent) {
-    if (bDecision){
-        var sKey = oEvent.key;
-        var sNewStoryItem = oStory[sCurrent][actions[sKey]]
-        if (!sNewStoryItem){
-            console.error("key not defined!");
-            return;
-        }
+    var sKey = oEvent.key;
+    var sNewStoryItem = oStory[sCurrent][actions[sKey]];
+    if (sNewStoryItem){
         sCurrent = sNewStoryItem;
         setVideo();
     }
