@@ -9,12 +9,23 @@
 
 <body onmousedown="onMouseDown(event)" onkeypress="onKeyPress(event);" style="margin: 0px; background-color: black; height: 100vh; width: 100%">
     
-    <center>
-        <button onclick="fullscreen();">Fullscreen</button>
-        <br />
+    <center style="margin: 1em;">
         <video id="player" onended="onEnded();" width="50%" height="50%">
             Videos not supported
         </video>
+        
+        <br />
+        <div>
+            <h1>Controls</h1>
+            <button onclick="fullscreen();">Fullscreen</button>
+            <p>
+                You might also use one of following buttons:
+                <br />
+                <span id="mouseButtons"></span>
+                <br />
+                <span id="keys"></span>
+            </p>
+        </div>
     </center>
     
     <!-- Scripts -->

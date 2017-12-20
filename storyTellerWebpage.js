@@ -9,6 +9,23 @@ function setVideo(){
     console.log("Playing " + sCurrent + " (" + sVideo + ")!");
 }
 
+function getControls(aKeys){
+    var sOut = "";
+    for (var k in aKeys){
+        sOut += k + ", ";
+    }
+    return sOut.substr(0, sOut.length -2);
+}
+
+function insertControls(){
+    var sMouseControls = getControls(actions.mouse);
+    if (sMouseControls)
+        document.getElementById("mouseButtons").innerHTML = "Mouse Buttons: " + sMouseControls;
+    var sKeyControls = getControls(actions.key);
+    if (sKeyControls)
+        document.getElementById("keys").innerHTML = "Keys: " + sKeyControls;
+}
+
 function init(){
     oPlayer = document.getElementById("player");
     setVideo();
@@ -17,6 +34,7 @@ function init(){
     }
     
     if (!bCursor) document.body.style.cursor = 'none';
+    insertControls();
 }
 
 

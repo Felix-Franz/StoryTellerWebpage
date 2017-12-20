@@ -7,7 +7,7 @@ var actions = {
         "b" : "action2"
     },
     mouse: {
-        "" : "action1",        //left button
+        "1" : "action1",        //left button
         "2" : "action2"         //right button
     }
 }
