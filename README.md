@@ -5,7 +5,7 @@ A Web page that plays videos depending on the user's decision.
 
 Just open the [Demo](https://felix-franz.github.io/StoryTellerWebpage/) an try to press 'a' or 'b'.
 
-## How to configure
+# How to configure
 
 Just go in the `story.json` and place your story inside the oStory variable😉.
 You only need to change the story items. the video that should be displayed at the beginn need to be named start (if there are no further changes).
