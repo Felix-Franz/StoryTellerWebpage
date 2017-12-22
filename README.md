@@ -14,7 +14,7 @@ Change the variable sCursor to display the cursor.
 
 The video Property need to be a link to a video that should be displayed while this story item is active. After the video was played the storyitem of ther property `autoaction` will be played.
 action1, action2, ... need be provided, but if a key or button is pressed and the current story item has a action for this action it will be played (similar to autoaction).
-```json
+```javascript
 "name of the story": {
         "video": "video url",
         "autoaction": "name of story item",
@@ -32,7 +32,7 @@ In following example the key a opens the next story item behind the action1 (fro
 Left mouse button (mouse button 1) also fires action1.
 You can add more oActions or have multiple oActions doing the same, just add more oActions.
 
-```json
+```javascript
 var oActions = {
     key: {                      //action bindings
         "a" : "action1",        //key: action name in story.json
