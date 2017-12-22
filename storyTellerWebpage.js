@@ -18,10 +18,10 @@ function getControls(aKeys){
 }
 
 function insertControls(){
-    var sMouseControls = getControls(actions.mouse);
+    var sMouseControls = getControls(oActions.mouse);
     if (sMouseControls)
         document.getElementById("mouseButtons").innerHTML = "Mouse Buttons: " + sMouseControls;
-    var sKeyControls = getControls(actions.key);
+    var sKeyControls = getControls(oActions.key);
     if (sKeyControls)
         document.getElementById("keys").innerHTML = "Keys: " + sKeyControls;
 }
@@ -57,7 +57,7 @@ function onEnded(){
 
 function onMouseDown(oEvent){
     var sButton = oEvent.buttons;
-    var sNewStoryItem = oStory[sCurrent][actions.mouse[sButton]];
+    var sNewStoryItem = oStory[sCurrent][oActions.mouse[sButton]];
     if (sNewStoryItem){
         sCurrent = sNewStoryItem;
         setVideo();
@@ -66,7 +66,7 @@ function onMouseDown(oEvent){
 
 function onKeyPress(oEvent) {
     var sKey = oEvent.key;
-    var sNewStoryItem = oStory[sCurrent][actions.key[sKey]];
+    var sNewStoryItem = oStory[sCurrent][oActions.key[sKey]];
     if (sNewStoryItem){
         sCurrent = sNewStoryItem;
         setVideo();

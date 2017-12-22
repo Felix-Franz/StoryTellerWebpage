@@ -23,17 +23,17 @@ action1, action2, ... need be provided, but if a key or button is pressed and th
     }
 ```
 
-You can also change name of the start story item and the actions inside the `story.js`.
+You can also change name of the start story item and the oActions inside the `story.js`.
 
 To change the start name just change change the `sStart` variable to whatever you want.
 
-Changing the keys/mouse is also very easy, you only need to change the `actions` variable.
+Changing the keys/mouse is also very easy, you only need to change the `oActions` variable.
 In following example the key a opens the next story item behind the action1 (from the story.json).
 Left mouse button (mouse button 1) also fires action1.
-You can add more actions or have multiple actions doing the same, just add more actions.
+You can add more oActions or have multiple oActions doing the same, just add more oActions.
 
 ```json
-var actions = {
+var oActions = {
     key: {                      //action bindings
         "a" : "action1",        //key: action name in story.json
         "b" : "action2"

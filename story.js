@@ -1,7 +1,7 @@
 var sStart = "startvideo";      //Start element name
 var bCursor = false;            //display a cursor
 
-var actions = {
+var oActions = {
     key: {                      //action bindings
         "a" : "action1",        //key: action name in story.json
         "b" : "action2"
