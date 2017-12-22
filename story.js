@@ -1,4 +1,4 @@
-var sStart = "startvideo";      //Start element name
+var sStart = "start";      //Start element name
 var bCursor = false;            //display a cursor
 
 var oActions = {
@@ -13,9 +13,9 @@ var oActions = {
 }
 
 var oStory = {
-    "startvideo": {
+    "start": {
         "video": "video/Startvideo.mp4",
-        "autoaction": "startvideo",
+        "autoaction": "start",
         "action1": "intro",
         "action2": "intro"
     },
@@ -27,14 +27,14 @@ var oStory = {
         "video": "video/Entscheidungsvideo.mp4",
         "action1": "FolgeSchwarz",
         "action2": "FolgeWeiß",
-        "autoaction": "startvideo"
+        "autoaction": "start"
     },
     "FolgeSchwarz": {
         "video": "video/FolgeSchwarz.mp4",
-        "autoaction": "startvideo"
+        "autoaction": "start"
     },
     "FolgeWeiß": {
         "video": "video/FolgeWeiß.mp4",
-        "autoaction": "startvideo"
+        "autoaction": "start"
     }
 }
